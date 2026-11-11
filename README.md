@@ -2,7 +2,7 @@
 
 Cây kỹ năng AI (Claude Code skills) của Kita — danh mục các skill cá nhân, có màu theo nhóm, tìm kiếm nhanh.
 
-**Xem online:** https://kitaluu.github.io/kita-skill-tree/
+**Xem online:** https://jincaotw.github.io/kita-skill-tree/
 
 ## File
 - `catalog.json` — danh mục skill (tên + mô tả tiếng Việt, phân nhóm + màu)
