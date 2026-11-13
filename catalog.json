@@ -83,12 +83,6 @@
       "desc": "Hỏi kiểu Socrates để gom nhu cầu video, xuất video-spec.md chuẩn để render."
     },
     {
-      "slug": "music-to-video",
-      "cat": "video-make",
-      "name": "Nhạc thành video",
-      "desc": "Có track nhạc → dựng video ăn theo beat. ⚠️ Bản cũ, đang gọi tới hyperframes-creative/core đã cất — tạm giữ, có thể không chạy trọn."
-    },
-    {
       "slug": "auto-editor",
       "cat": "video-edit",
       "name": "Cắt khoảng lặng video nói",
