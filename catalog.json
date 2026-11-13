@@ -2,53 +2,217 @@
   "_meta": {
     "title": "🌳 Cây kỹ năng AI của Kita",
     "categories": {
-      "hf-core": { "zh": "HyperFrames — Lõi & kỹ thuật video", "emoji": "🎬", "color": "#3b82f6" },
-      "video-make": { "zh": "Tạo video theo loại", "emoji": "🎥", "color": "#8b5cf6" },
-      "video-edit": { "zh": "Dựng & xử lý video có sẵn", "emoji": "✂️", "color": "#ec4899" },
-      "content": { "zh": "Nội dung & Social", "emoji": "✍️", "color": "#10b981" },
-      "web": { "zh": "Web & Thiết kế", "emoji": "🎨", "color": "#f59e0b" },
-      "knowledge": { "zh": "Tri thức & Suy nghĩ", "emoji": "🧠", "color": "#06b6d4" },
-      "system": { "zh": "Hệ thống & Meta", "emoji": "⚙️", "color": "#ef4444" }
+      "hf-core": {
+        "zh": "HyperFrames — Lõi & kỹ thuật video",
+        "emoji": "🎬",
+        "color": "#3b82f6"
+      },
+      "video-make": {
+        "zh": "Tạo video theo loại",
+        "emoji": "🎥",
+        "color": "#8b5cf6"
+      },
+      "video-edit": {
+        "zh": "Dựng & xử lý video có sẵn",
+        "emoji": "✂️",
+        "color": "#ec4899"
+      },
+      "content": {
+        "zh": "Nội dung & Social",
+        "emoji": "✍️",
+        "color": "#10b981"
+      },
+      "web": {
+        "zh": "Web & Thiết kế",
+        "emoji": "🎨",
+        "color": "#f59e0b"
+      },
+      "knowledge": {
+        "zh": "Tri thức & Suy nghĩ",
+        "emoji": "🧠",
+        "color": "#06b6d4"
+      },
+      "system": {
+        "zh": "Hệ thống & Meta",
+        "emoji": "⚙️",
+        "color": "#ef4444"
+      }
     }
   },
   "skills": [
-    { "slug": "hyperframes", "cat": "hf-core", "name": "HyperFrames — Cửa ngõ", "desc": "Điểm vào chung cho mọi việc làm/dựng video; định tuyến tới workflow phù hợp." },
-    { "slug": "hyperframes-core", "cat": "hf-core", "name": "HyperFrames — Cấu trúc", "desc": "Hợp đồng dựng composition: thẻ data-*, track, biến, luật render tất định." },
-    { "slug": "hyperframes-animation", "cat": "hf-core", "name": "HyperFrames — Chuyển động", "desc": "Toàn bộ kiến thức animation: luật chuyển động, blueprint cảnh, 7 runtime (GSAP, Lottie, Three.js…)." },
-    { "slug": "hyperframes-creative", "cat": "hf-core", "name": "HyperFrames — Sáng tạo", "desc": "Chỉ đạo nghệ thuật: bảng màu, typography, lời thoại, nhịp, bố cục thương hiệu." },
-    { "slug": "hyperframes-media", "cat": "hf-core", "name": "HyperFrames — Âm thanh", "desc": "Giọng đọc TTS, nhạc nền, hiệu ứng, phụ đề, tách nền, chép lời cho video." },
-    { "slug": "hyperframes-cli", "cat": "hf-core", "name": "HyperFrames — CLI", "desc": "Vòng lặp dev CLI (init/render/preview…), render đám mây AWS Lambda, gỡ lỗi môi trường." },
-    { "slug": "hyperframes-registry", "cat": "hf-core", "name": "HyperFrames — Registry", "desc": "Cài & ghép block/component từ registry vào composition." },
-    { "slug": "media-use", "cat": "hf-core", "name": "Kho media", "desc": "Giải quyết mọi nhu cầu nhạc/SFX/ảnh/icon thành file cục bộ + sổ ghi, một lệnh resolve." },
-    { "slug": "remotion-to-hyperframes", "cat": "hf-core", "name": "Chuyển Remotion", "desc": "Chuyển composition Remotion (React) sang HTML HyperFrames (chỉ khi yêu cầu rõ)." },
-
-    { "slug": "faceless-explainer", "cat": "video-make", "name": "Video giải thích (faceless)", "desc": "Biến bài viết/chủ đề thành video giải thích không mặt người, hình tự dựng, ~30–90s." },
-    { "slug": "product-launch-video", "cat": "video-make", "name": "Video ra mắt sản phẩm", "desc": "Từ URL/brief sản phẩm thành video quảng bá, ra mắt tính năng, promo SaaS." },
-    { "slug": "website-to-video", "cat": "video-make", "name": "Website thành video", "desc": "Chụp website rồi dựng thành video tour/showcase hoặc clip social." },
-    { "slug": "pr-to-video", "cat": "video-make", "name": "PR GitHub thành video", "desc": "Biến một pull request GitHub thành video giải thích thay đổi code từ diff/commit." },
-    { "slug": "music-to-video", "cat": "video-make", "name": "Nhạc thành video", "desc": "Có track nhạc → dựng video ăn theo beat (lyric video, slideshow, kinetic promo)." },
-    { "slug": "motion-graphics", "cat": "video-make", "name": "Motion graphic ngắn", "desc": "Đồ hoạ chuyển động ngắn (<10s): chữ động, đếm số, logo sting, lower-third, overlay." },
-    { "slug": "general-video", "cat": "video-make", "name": "Video tổng hợp", "desc": "Workflow dự phòng cho video dài/nhiều cảnh, brand reel, montage khi không hợp workflow chuyên biệt." },
-    { "slug": "slideshow", "cat": "video-make", "name": "Trình chiếu / Slide deck", "desc": "Dựng slideshow, pitch deck tương tác: slide rời, reveal, nhánh, hotspot." },
-    { "slug": "video-spec-builder", "cat": "video-make", "name": "Thu thập yêu cầu video", "desc": "Hỏi kiểu Socrates để gom nhu cầu video, xuất video-spec.md chuẩn để render." },
-
-    { "slug": "auto-editor", "cat": "video-edit", "name": "Cắt khoảng lặng video nói", "desc": "Tự cắt khoảng lặng/ngập ngừng trong video nói trước máy, dựng bản jump-cut gọn." },
-    { "slug": "broll-pexels", "cat": "video-edit", "name": "Tìm B-roll (Pexels)", "desc": "Tìm & tải cảnh không lời từ Pexels chèn vào short/video nói." },
-    { "slug": "embedded-captions", "cat": "video-edit", "name": "Phụ đề đặc sắc", "desc": "Thêm phụ đề nghệ thuật vào video talking-head (32 phong cách VFX)." },
-    { "slug": "talking-head-recut", "cat": "video-edit", "name": "Ốp overlay lên video", "desc": "Ốp thẻ đồ hoạ (tiêu đề, lower-third, callout, quote) lên video talking-head/podcast có sẵn." },
-
-    { "slug": "social-post", "cat": "content", "name": "Viết post Facebook", "desc": "Viết nhanh 1 bài Facebook, học giọng văn từ bài cũ, xuất bản dán được ngay." },
-    { "slug": "san-xuat-noi-dung-athao", "cat": "content", "name": "Sản xuất nội dung A Thảo", "desc": "Sản xuất nội dung kênh A Thảo (video ngắn/carousel/post) theo SOP 5 giai đoạn." },
-    { "slug": "cards", "cat": "content", "name": "Thẻ ảnh IG A Thảo", "desc": "Chuyển văn bản thành thẻ IG phong cách thương hiệu A Thảo, 6 style, xuất PNG 2x." },
-
-    { "slug": "landing", "cat": "web", "name": "Trang bán hàng", "desc": "Hỏi 17 câu rồi xuất trang bán hàng HTML + Tailwind (khoá học/sự kiện/sản phẩm số), tích hợp UUPM." },
-    { "slug": "ui-ux-pro-max", "cat": "web", "name": "Thiết kế UI/UX Pro", "desc": "Bộ trí tuệ thiết kế UI/UX: 67 style, 96 bảng màu, 57 cặp font, nhiều stack; plan/build/review code UI." },
-
-    { "slug": "heptabase", "cat": "knowledge", "name": "Heptabase", "desc": "Đọc/tìm/ghi vào kho tri thức Heptabase cục bộ: whiteboard, card, journal, tag." },
-    { "slug": "journal", "cat": "knowledge", "name": "Nhật ký học tập", "desc": "Mỗi ngày 5 câu hỏi dẫn dắt nhìn lại việc học, tự sinh nhật ký Markdown, theo dõi việc chưa xong." },
-    { "slug": "brainstorm", "cat": "knowledge", "name": "Brainstorm ý tưởng", "desc": "Hỏi đáp dẫn dắt biến ý tưởng mơ hồ thành bản kế hoạch cụ thể trước khi bắt tay." },
-
-    { "slug": "diem-danh-ai", "cat": "system", "name": "Điểm danh dùng AI", "desc": "Báo cáo mỗi ngày/tuần đã dùng AI bao nhiêu, nhắc Kita giữ nhịp độ cân bằng." },
-    { "slug": "skill-creator", "cat": "system", "name": "Tạo & tối ưu Skill", "desc": "Tạo skill mới, sửa/tối ưu skill có sẵn, chạy eval đo hiệu năng và độ trigger." }
+    {
+      "slug": "hyperframes",
+      "cat": "hf-core",
+      "name": "HyperFrames — Cửa ngõ",
+      "desc": "Đọc trước tiên khi làm/sửa/render bất kỳ video nào bằng HyperFrames: video ra mắt, giải thích, video nhạc, biểu đồ, video dọc, phụ đề, overlay."
+    },
+    {
+      "slug": "hyperframes-cli",
+      "cat": "hf-core",
+      "name": "HyperFrames — CLI",
+      "desc": "Dòng lệnh theo việc: tạo dự án, kiểm tra, xem khung hình, sửa timeline, preview, render máy/đám mây, xử lý lỗi render."
+    },
+    {
+      "slug": "hyperframes-registry",
+      "cat": "hf-core",
+      "name": "HyperFrames — Registry",
+      "desc": "~450 block/component dựng sẵn (chuyển cảnh, tiêu đề, chữ động, phụ đề, biểu đồ, 3D…), cài thành mã sửa được."
+    },
+    {
+      "slug": "media-use",
+      "cat": "hf-core",
+      "name": "Kho media",
+      "desc": "Lấy/tạo mọi media cho video: nhạc, SFX, ảnh, icon, giọng đọc, chép lời, tách nền, chỉnh màu; trộn âm thanh."
+    },
+    {
+      "slug": "remotion-to-hyperframes",
+      "cat": "hf-core",
+      "name": "Chuyển code video cũ",
+      "desc": "Đưa video làm bằng Remotion, Lottie, Three.js… sang HyperFrames và so từng khung với bản gốc."
+    },
+    {
+      "slug": "slideshow",
+      "cat": "video-make",
+      "name": "Trình chiếu / Slide deck",
+      "desc": "Dựng slideshow HyperFrames để trình chiếu trực tiếp: slide, reveal, nhánh, hotspot, chế độ người nói có ghi chú."
+    },
+    {
+      "slug": "video-spec-builder",
+      "cat": "video-make",
+      "name": "Thu thập yêu cầu video",
+      "desc": "Hỏi kiểu Socrates để gom nhu cầu video, xuất video-spec.md chuẩn để render."
+    },
+    {
+      "slug": "music-to-video",
+      "cat": "video-make",
+      "name": "Nhạc thành video",
+      "desc": "Có track nhạc → dựng video ăn theo beat. ⚠️ Bản cũ, đang gọi tới hyperframes-creative/core đã cất — tạm giữ, có thể không chạy trọn."
+    },
+    {
+      "slug": "auto-editor",
+      "cat": "video-edit",
+      "name": "Cắt khoảng lặng video nói",
+      "desc": "Tự cắt khoảng lặng/ngập ngừng trong video nói trước máy, dựng bản jump-cut gọn."
+    },
+    {
+      "slug": "broll-pexels",
+      "cat": "video-edit",
+      "name": "Tìm B-roll (Pexels)",
+      "desc": "Tìm & tải cảnh không lời từ Pexels chèn vào short/video nói."
+    },
+    {
+      "slug": "video-subtitle",
+      "cat": "video-edit",
+      "name": "Phụ đề đơn giản",
+      "desc": "Chép lời video thành phụ đề có mốc thời gian và đốt (burn) phụ đề vào file video."
+    },
+    {
+      "slug": "social-post",
+      "cat": "content",
+      "name": "Viết post Facebook",
+      "desc": "Viết nhanh 1 bài Facebook, học giọng văn từ bài cũ, xuất bản dán được ngay."
+    },
+    {
+      "slug": "san-xuat-noi-dung-athao",
+      "cat": "content",
+      "name": "Sản xuất nội dung A Thảo",
+      "desc": "Sản xuất nội dung kênh A Thảo (video ngắn/carousel/post) theo SOP 5 giai đoạn."
+    },
+    {
+      "slug": "kich-ban-video-athao",
+      "cat": "content",
+      "name": "Kịch bản video A Thảo",
+      "desc": "Viết kịch bản YouTube (quay thật + sticker): lời thoại đời thường, dữ kiện có nguồn, ô chừa cho Kita thêm hài, tiêu đề chuẩn SEO."
+    },
+    {
+      "slug": "cards",
+      "cat": "content",
+      "name": "Thẻ ảnh IG A Thảo",
+      "desc": "Chuyển văn bản thành thẻ IG phong cách thương hiệu A Thảo, 6 style, xuất PNG 2x."
+    },
+    {
+      "slug": "speak-human-tw",
+      "cat": "content",
+      "name": "Bỏ giọng AI (tiếng Trung)",
+      "desc": "Sửa văn tiếng Trung phồn thể cho bớt giọng AI, đổi từ đại lục sang từ Đài, sửa dấu câu."
+    },
+    {
+      "slug": "property-pdf",
+      "cat": "content",
+      "name": "PDF dự án BĐS → web",
+      "desc": "Tách ảnh + chữ từ PDF giới thiệu dự án BĐS Việt Nam, soạn đoạn văn và gói SEO để đăng WordPress."
+    },
+    {
+      "slug": "landing",
+      "cat": "web",
+      "name": "Trang bán hàng",
+      "desc": "Hỏi 17 câu rồi xuất trang bán hàng HTML + Tailwind (khoá học/sự kiện/sản phẩm số), tích hợp UUPM."
+    },
+    {
+      "slug": "ui-ux-pro-max",
+      "cat": "web",
+      "name": "Thiết kế UI/UX Pro",
+      "desc": "Bộ trí tuệ thiết kế UI/UX: 67 style, 96 bảng màu, 57 cặp font, nhiều stack; plan/build/review code UI."
+    },
+    {
+      "slug": "flowchart",
+      "cat": "web",
+      "name": "Sơ đồ quy trình tương tác",
+      "desc": "Biến quy trình/SOP/phễu thành sơ đồ HTML bấm được từng bước, xem tốt trên điện thoại, nhúng được vào Notion."
+    },
+    {
+      "slug": "openslide-deck",
+      "cat": "web",
+      "name": "Slide thuyết trình dài",
+      "desc": "Làm slide bài giảng/khoá học/đề xuất 20+ trang bằng open-slide: chốt dàn ý, sửa theo comment, xuất PDF + link online."
+    },
+    {
+      "slug": "heptabase",
+      "cat": "knowledge",
+      "name": "Heptabase",
+      "desc": "Đọc/tìm/ghi vào kho tri thức Heptabase cục bộ: whiteboard, card, journal, tag."
+    },
+    {
+      "slug": "journal",
+      "cat": "knowledge",
+      "name": "Nhật ký học tập",
+      "desc": "Mỗi ngày 5 câu hỏi dẫn dắt nhìn lại việc học, tự sinh nhật ký Markdown, theo dõi việc chưa xong."
+    },
+    {
+      "slug": "brainstorm",
+      "cat": "knowledge",
+      "name": "Brainstorm ý tưởng",
+      "desc": "Hỏi đáp dẫn dắt biến ý tưởng mơ hồ thành bản kế hoạch cụ thể trước khi bắt tay."
+    },
+    {
+      "slug": "kangyongcai",
+      "cat": "knowledge",
+      "name": "Cố vấn giao tiếp",
+      "desc": "Gợi ý từ chối khéo, trả lời thư khách khó, đồng hành với chuyện học viên — mềm mà rõ, không hứa bừa."
+    },
+    {
+      "slug": "diem-danh-ai",
+      "cat": "system",
+      "name": "Điểm danh dùng AI",
+      "desc": "Báo cáo mỗi ngày/tuần đã dùng AI bao nhiêu, nhắc Kita giữ nhịp độ cân bằng."
+    },
+    {
+      "slug": "skill-creator",
+      "cat": "system",
+      "name": "Tạo & tối ưu Skill",
+      "desc": "Tạo skill mới, sửa/tối ưu skill có sẵn, chạy eval đo hiệu năng và độ trigger."
+    },
+    {
+      "slug": "kita-tools-query",
+      "cat": "system",
+      "name": "Tra kho công cụ số",
+      "desc": "Tra kho «數位工具» trên Notion của Andy: đang/nên dùng công cụ gì, công cụ nào đã bỏ, gói trả phí bao nhiêu."
+    },
+    {
+      "slug": "kita-ledger-batch",
+      "cat": "system",
+      "name": "Ghi sổ thu chi hàng loạt",
+      "desc": "Ghi nhiều khoản thu chi một lần vào sổ «流水» (Google Sheet của Andy): kiểm định dạng, so trùng, chạy thử, chị duyệt mới ghi, huỷ được cả đợt."
+    }
   ]
 }
