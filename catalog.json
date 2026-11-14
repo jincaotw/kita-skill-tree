@@ -207,6 +207,12 @@
       "cat": "system",
       "name": "Ghi sổ thu chi hàng loạt",
       "desc": "Ghi nhiều khoản thu chi một lần vào sổ «流水» (Google Sheet của Andy): kiểm định dạng, so trùng, chạy thử, chị duyệt mới ghi, huỷ được cả đợt."
+    },
+    {
+      "slug": "kita-vn-stocks",
+      "cat": "system",
+      "name": "Cổ phiếu Việt Nam",
+      "desc": "Cập nhật danh mục cổ phiếu SSI / VNSC vào trang «Investments» từ ảnh chụp app; khi bán thì ghi vào bảng «sold» và ghi lời/lỗ vào «流水». Chạy thử trước, chị duyệt mới ghi, huỷ được."
     }
   ]
 }
